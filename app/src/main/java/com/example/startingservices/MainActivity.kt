@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             if (number != null) {
                 val intent = Intent(this, CountdownService::class.java)
                 intent.putExtra(EXTRA_COUNT, number)
-                startService(intent) // Start Service
+                startService(intent)
             }
         }
     }

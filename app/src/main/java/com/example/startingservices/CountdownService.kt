@@ -5,6 +5,9 @@ import android.content.Intent
 import android.os.IBinder
 import android.util.Log
 import kotlinx.coroutines.*
+import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
 
 class CountdownService : Service() {
     private val serviceScope = CoroutineScope(Dispatchers.Default + Job())
@@ -15,6 +18,9 @@ class CountdownService : Service() {
             for (i in startNumber downTo 0) {
                 Log.d("CountdownService", "Countdown: $i")
                 delay(1000L)
+            }
+            Handler(Looper.getMainLooper()).post {
+                Toast.makeText(applicationContext, "Time is up!", Toast.LENGTH_LONG).show()
             }
             stopSelf()
         }

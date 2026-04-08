@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
-        android:hint="@string/enter_a_number"
+        android:hint="@string/enter_a_number_to_start_the_timer"
         android:inputType="number" />
 
     <Button

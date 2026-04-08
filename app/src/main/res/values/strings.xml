@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Starting Services</string>
-    <string name="enter_a_number">Enter a number</string>
     <string name="start_countdown">Start Countdown</string>
+    <string name="enter_a_number_to_start_the_timer">Enter a number to start the timer</string>
 </resources>

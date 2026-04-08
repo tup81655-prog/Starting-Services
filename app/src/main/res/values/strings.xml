@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Starting Services</string>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="start_countdown">Start Countdown</string>
+</resources>
